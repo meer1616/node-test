@@ -8,6 +8,9 @@ app.get("/",async(req,res)=>{
 app.get("/api",async(req,res)=>{
     res.send("Hi there this is api route!!")
 })
+app.get("/version",async(req,res)=>{
+    res.send("Hi there this is version route!!")
+})
 
 
 app.listen(8000,()=>{

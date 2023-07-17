@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  my-backend-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - 8000:8000
+    volumes:
+      - './:/nodeapp'
+      
+volumes:
+  my-backend-app:
